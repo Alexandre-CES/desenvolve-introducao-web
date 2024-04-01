@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pesquisa</title>
+</head>
+<body>
+    <header>
+        <h1>Pesquisa</h1>
+        <hr>
+    </header>
+    <main>
+        <form action="" method="post">
+            <h2>Informações pessoais</h2>
+            <p>
+                <label for="name">Nome: </label>
+                    <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="number">telefone: </label>
+                    <input type="number" name="number" id="number" required>
+            </p>
+
+            <hr>
+
+            <h2>Perguntas / teste de personalidade</h2>
+            <small>Escolha com sabedoria</small>
+            <p>
+                <input type="radio" name="inicial" id="charmander">
+                <label for="charmander">Charmander</label>
+
+                <input type="radio" name="inicial" id="squirtle">
+                <label for="squirtle">Squirtle</label>
+
+                <input type="radio" name="inicial" id="bulbassauro">
+                <label for="bulbassauro">Bulbassauro</label>
+            </p>
+
+            <p>
+                <input type="radio" name="achocolatado" id="toddy">
+                <label for="toddy">Toddy</label>
+
+                <input type="radio" name="achocolatado" id="nescau">
+                <label for="nescau">Nescau</label>
+            </p>
+
+            <select name="comida" id="comida">
+                <option value="" selected disabled></option>
+                <option value="bolacha">Bolacha</option>
+                <option value="biscoito">Biscoito</option>
+            </select>
+
+            <hr>
+            <p>
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">Concorda em compartilhar seus dados?</label>
+            </p>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>    
+</html>
