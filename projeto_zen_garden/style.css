@@ -1,8 +1,9 @@
-/* 
-    paleta: https://color.adobe.com/pt/search?q=purple%20blue 
 
-    Fiz algumas alterações, provavelmente vou alterar mais, mas to me baseando nessas cores.
-*/
+/* paleta: https://color.adobe.com/pt/search?q=purple%20blue */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root{
     --bg:black;
@@ -11,9 +12,54 @@
     --color2:#0468BF;
     --color3:#c000c4;
     --color4:#590253;
+
+    --fontMain: 'Rubik Mono One','monospace';
+    --fontTitle: 'Tinos', 'serif';
+    --fontText: 'Roboto', 'Arial', 'sans-serif';
 }
 
 html{
     background-color: var(--bg);
     color: var(--color3);
+
+    font:normal normal 25px var(--fontText);
+}
+
+h1, h2, h3{
+    color: var(--color2);
+    font-family: var(--fontTitle);
+    text-align: center;
+}
+
+h1{
+    font-family: var(--fontMain);
+    font-weight: 100;
+    font-size: 1.8em;
+}
+
+h2{
+    font-size: 1.4em;
+}
+
+h3{
+    font-size: 1.2em;
+}
+
+p{
+    font:normal normal 1em var(--fontText);
+
+    line-height: 1.5;
+    text-indent: 1em;
+}
+
+abbr{
+    font-variant: small-caps;
+}
+
+.summary{
+    text-align: center;
+}
+
+.main p{
+    line-height: 1.5;
 }
