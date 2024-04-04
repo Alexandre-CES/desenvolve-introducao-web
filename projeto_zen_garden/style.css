@@ -1,13 +1,19 @@
+/* 
+    paleta: https://color.adobe.com/pt/search?q=purple%20blue 
 
-/* paleta: https://color.adobe.com/pt/search?q=purple%20blue */
+    Fiz algumas alterações, provavelmente vou alterar mais, mas to me baseando nessas cores.
+*/
 
 :root{
     --bg:black;
 
-    --color1:#012340;
-    --color2:#034C8C;
-    --color3:#0468BF;
-    --color4:#A303A6;
-    --color5:#590253;
+    --color1:#002975;
+    --color2:#0468BF;
+    --color3:#c000c4;
+    --color4:#590253;
 }
 
+html{
+    background-color: var(--bg);
+    color: var(--color3);
+}
