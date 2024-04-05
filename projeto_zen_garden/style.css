@@ -100,12 +100,21 @@ abbr{
 }
 
 .main footer{
+    display: flex;
+    justify-content: space-between;
+    
+
     margin: 4%;
 }
 
 .main footer a{
     display: inline-block;
+
+    flex-basis: 80px;
+
     padding: 0.5em;
+    text-align: center;
+
     border: 2px solid var(--color3);
 }
 
@@ -120,9 +129,42 @@ abbr{
 .design-selection{
     position: absolute;
 
-    top: 550px;
+    top: 510px;
     left: 62%;
 
     padding: 0px 2%;
 }
 
+.benefits{
+    display: flex;
+    flex-direction: row;
+
+    border-top: 1px solid var(--color1);
+    border-bottom: 1px solid var(--color1);
+}
+
+.benefits h3{
+    order:2;
+    flex-basis: 30%;
+    align-self: center;
+}
+
+.benefits p{
+    order:1;
+    flex-basis: 70%;
+}
+
+.participation{
+    display: flex;
+    flex-wrap: wrap;
+
+    border-top: 1px solid var(--color1);
+}
+
+.participation h3{
+    align-self: center;
+}
+
+.participation h3, .participation p{
+    flex-basis: 50%;
+}
