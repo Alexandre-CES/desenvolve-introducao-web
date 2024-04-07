@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Great+Vibes&display=swap');
 
 :root{
     --bg:white;
@@ -16,6 +17,7 @@
     --fontMain: 'Rubik Mono One','monospace';
     --fontTitle: 'Tinos', 'serif';
     --fontText: 'Roboto', 'Arial', 'sans-serif';
+    --fontFL: 'Great Vibes', 'monospace';
 }
 
 html{
@@ -71,6 +73,19 @@ abbr{
     font-variant: small-caps;
 }
 
+a{
+    font-weight: bold;
+    color: var(--color3);
+}
+
+a:hover{
+    color: var(--color4);
+}
+
+a:visited{
+    font-weight: normal;
+}
+
 #zen-intro header{
     background-color: var(--color1);
     color: var(--color3);
@@ -99,6 +114,14 @@ abbr{
     line-height: 1.5;
 }
 
+.main p::first-letter{
+    padding: 0px 5px;
+    float: left;
+    color: var(--color1);
+    font-size: 3em;
+    font-family: var(--fontFL);
+}
+
 .main footer{
     display: flex;
     justify-content: space-between;
@@ -115,7 +138,7 @@ abbr{
     padding: 0.5em;
     text-align: center;
 
-    border: 2px solid var(--color3);
+    border: 2px solid var(--color2);
 }
 
 .explanation{
@@ -129,10 +152,18 @@ abbr{
 .design-selection{
     position: absolute;
 
-    top: 510px;
+    top: 520px;
     left: 62%;
 
     padding: 0px 2%;
+}
+
+.design-selection li{
+    border-top: 1px solid var(--color1);
+}
+
+.design-selection li:last-child{
+    border-bottom: 1px solid var(--color1);
 }
 
 .benefits{
