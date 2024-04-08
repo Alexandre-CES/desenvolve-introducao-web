@@ -86,6 +86,8 @@ a:visited{
     font-weight: normal;
 }
 
+/* ID */
+
 #zen-intro header{
     background-color: var(--color1);
     color: var(--color3);
@@ -94,6 +96,8 @@ a:visited{
 #design-archives{
     display: none;
 }
+
+/* CLASSES */
 
 .intro{
     height: 550px;
@@ -126,7 +130,6 @@ a:visited{
     display: flex;
     justify-content: space-between;
     
-
     margin: 4%;
 }
 
@@ -149,6 +152,8 @@ a:visited{
     border-right: 1px solid #1f295c;
 }
 
+    /* menu de design */
+
 .design-selection{
     position: absolute;
 
@@ -165,6 +170,8 @@ a:visited{
 .design-selection li:last-child{
     border-bottom: 1px solid var(--color1);
 }
+
+    /* benefícios */
 
 .benefits{
     display: flex;
@@ -185,6 +192,8 @@ a:visited{
     flex-basis: 70%;
 }
 
+    /* participação */
+
 .participation{
     display: flex;
     flex-wrap: wrap;
@@ -198,4 +207,103 @@ a:visited{
 
 .participation h3, .participation p{
     flex-basis: 50%;
+}
+
+
+/* MEDIA QUERY */
+
+    /* celular */
+@media screen and (max-width:768px) {
+
+    p{
+        text-indent: 0px;
+    }
+
+    #zen-intro{
+        height: auto;
+    }
+
+    .design-selection{
+        position: static;
+    }
+
+    ul{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .explanation{
+        border: none;
+        width: 100%;
+    }
+
+    .participation{
+        flex-direction: column;
+    }
+
+    .intro{
+        height: auto;
+    }
+
+    .main footer{
+        flex-direction: column;
+    }
+
+    .main footer a{
+        display:inline;
+        flex-basis: 30px;
+        margin-top: 10px;
+        padding-bottom: 1px;
+
+        font-size: 1.1em;
+    }
+
+}
+
+    /* telas médias (resolver sobreposição) */
+
+@media screen and (max-width:940px){
+
+    .explanation{
+        margin-top: 100px;
+    }
+
+    .design-selection{
+        top: 630px;
+    }
+
+    .design-selection ul{
+        padding: 0px;
+    }
+}
+
+    /* impressora */
+
+@media print {
+    html{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .design-selection ul{
+        padding-left: 10px;
+    }
+
+    #zen-intro header{
+        background-color: var(--bg);
+        color: var(--color3);
+    }
+
+    /*resolver sobreposição de letras*/
+
+    .explanation{
+        margin-top: 110px;
+    }
+
+    .design-selection{
+        top: 640px;
+    }
+
+    .design-selection ul{
+        padding: 0px;
+    }
 }
