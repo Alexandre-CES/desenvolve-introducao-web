@@ -8,3 +8,12 @@ header{
 header section{
     max-width: 600px;
 }
+
+main > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#educacao{
+    order: 1;
+}

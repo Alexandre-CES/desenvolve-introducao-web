@@ -70,3 +70,36 @@ header{
     padding: 0px 20px;
 }
 
+main{
+    text-align: center;
+}
+
+#experiencia > p{
+    text-align: left;
+}
+
+footer{
+    text-align: center;
+}
+
+footer ul{
+    columns: 2;
+    list-style-type: none;
+}
+
+footer img{
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+/* OBSERVAR CAIXAS */
+
+section, div{
+    border: 1px solid black;
+}
