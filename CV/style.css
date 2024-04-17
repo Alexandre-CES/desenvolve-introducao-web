@@ -1,3 +1,72 @@
 @charset "UTF-8";
 
+*, html{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1500px;
+}
+
+:root{
+    --color1:#543A91;
+    --color2:#4ba555;
+    --color3:#3d2000;
+
+    --fontText: sans-serif;
+    --fontTitle: serif;
+    --fontMenu: monospace;
+}
+
+/* GERAL */
+
+a{
+    text-decoration: none;
+}
+
+/* PARTES */
+    /* MENU */
+    menu{
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        padding: 5px 5px;
+        background-color: var(--color2);
+    }
+
+    nav ul{
+        display: flex;
+
+        justify-content:space-between;
+        flex-flow: wrap row;
+
+        list-style-type: none;
+    }
+
+    nav ul li{
+        flex-basis: 50%;
+        padding: 3px;
+        
+        border: 1px solid black;
+
+        text-align: center;
+        font: bold 1.5em var(--fontMenu);
+
+    }
+
+    nav ul li a{
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.452);
+        color: var(--color3);
+    }
+
+
+header{
+    margin: 110px 0px 20px;
+    padding: 0px 20px;
+}
 

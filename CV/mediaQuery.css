@@ -1,0 +1,10 @@
+header{
+    display: flex;
+    justify-content: space-between;
+
+    font:normal 1.5em var(--fontText);
+}
+
+header section{
+    max-width: 600px;
+}

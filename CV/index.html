@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuery.css" media="screen and (min-width:500px)">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <menu>
+        <nav>
+            <ul>
+                <li><a href="#apresentacao">Apresentação</a></li>
+                <li><a href="educacao">Educação</a></li>
+                <li><a href="certificacoes">Certificações</a></li>
+                <li><a href="experiencias">Experiência</a></li>
+                <li><a href="habilidades">Habilidades</a></li>
+                <li><a href="redesSociais">Redes Sociais</a></li>
+            </ul>
+        </nav>
+    </menu>
+    <header id="apresentacao">
 <!--
 Apresentação (Cabeçalho)
 Esta seção deverá fazer uma breve apresentação sobre você. Você deverá incluir, pelo
@@ -21,9 +35,9 @@ O nome deverá ser formatado como título da página.
 Cada item deverá ser declarado dentro de seu próprio container.
 -->
 
-    <h1>Alexandre Cabral do Espírito Santo</h1>
-    <img src="#" alt="Foto pessoal">
     <section>
+        <h1>Alexandre Cabral do Espírito Santo</h1>
+        <img src="#" alt="Foto pessoal">
         <p>
             <strong>alexandreces666@gmail.como</strong>
         </p>
@@ -40,7 +54,7 @@ Cada item deverá ser declarado dentro de seu próprio container.
     </header>
     <main>
 
-        <section>
+        <section id="educacao">
  <!--
  Educação
 Esta seção deverá informar as instituições acadêmicas pelas quais você passou. Para cada
@@ -59,7 +73,7 @@ O nome da instituição deverá estar em um subtítulo.
             <p>Colégio Tiradentes da PMMG (2012-2023)</p>
 
         </section>
-        <section>
+        <section id="certificacoes">
 <!--
     Certificações
 Esta seção deverá informar as certificações referentes a cursos de capacitação realizados
@@ -78,34 +92,130 @@ O elemento contendo o nome do curso deverá possuir um destaque em relação aos
 
             <h2>Certificações</h2>
             
-                <div>
-                    <h3>New Way Informática</h3>
-                    <img src="#" alt="Certificado da New Way">
-                    <p>
-                        <strong>Carga horária: </strong> ... horas
-                    </p>
-                    <p>
-                        <strong>Ano(s) de realização: </strong> 2022-2023
-                    </p>
-                </div>
+            <div>
+                <h3>New Way Informática</h3>
+                <img src="#" alt="Certificado da New Way">
+                <p>
+                    <strong>Carga horária: </strong> ... horas
+                </p>
+                <p>
+                    <strong>Ano(s) de realização: </strong> 2022-2023
+                </p>
+            </div>
 
-                <div>
-                    <h3>CS50-Fundação Estudar</h3>
-                    <img src="#" alt="Certificado da Fundação Estudar">
-                    <p>
-                        <strong>Carga horária: </strong> ... horas
-                    </p>
-                    <p>
-                        <strong>Anos de realização: </strong> 2023-2024
-                    </p>    
-                </div>
+            <div>
+                <h3>CS50-Fundação Estudar</h3>
+                <img src="#" alt="Certificado da Fundação Estudar">
+                <p>
+                    <strong>Carga horária: </strong> ... horas
+                </p>
+                <p>
+                    <strong>Anos de realização: </strong> 2023-2024
+                </p>    
+            </div>
+        </section>
+        <section id="experiencia">
+<!--          
+Experiência
+Esta seção deverá descrever suas experiências profissionais prévias. Similar a parte de
+Educação, você deverá informar para cada experiência:
+Título do cargo ocupado.
+Nomes da empresa onde trabalhou.
+Período de emprego (datas de início e término).
+Responsabilidades e realizações relevantes.
 
+Observações
+Cada registro também deverá ficar em seu próprio container.
+Cada campo deverá ficar em um elemento específico.
+O nome do cargo deverá ficar dentro de um elemento de título.
+-->
+            <h2>Experiência</h2>
+            <h3>Nenhuma</h3>    
+            <p>
+                <strong>Título do Cargo: </strong>Desempregado
+                <strong>Nome da empresa: </strong>Podia existir
+                <strong>Período: </strong>18 anos ;-;
+                <strong>Responsabilidades: </strong> Arrumar um emprego
+            </p>
+
+        </section>
+        <section id="habilidades">
+<!--
+Habilidades Técnicas
+Você deverá listar as habilidades técnicas que possui. Fique a vontade para incluir os
+conceitos que está aprendendo dentro do curso, os software que possui experiência, entre
+outras ferramentas e técnicas que considera importante.
+
+Observações
+As habilidades deverão ser incluídas em uma lista não ordenada
+-->
+
+            <h2>Habilidades Técnicas</h2>
+            <h3>Informática:</h3>
+            <ul>
+                <li>Windows</li>
+                <li>Linux</li>
+                <li>Microsoft World</li>
+                <li>Microsoft Excel</li>
+                <li>Microsoft PowerPoint</li>
+                <li>Internet</li>
+                <li>Digitação</li>
+                <li>Photoshop</li>
+                <li>Illustraitor</li>
+            </ul>
+            <h3>Programação Web:</h3>
+            <h4>Front-end</h4>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Elementos de Interface</li>
+            </ul>
+            <h4>Back-end</h4>
+            <ul>
+                <li>NodeJs</li>
+                <li>Python</li>
+                <li>Database(SQL, SQLite, MongoDB)</li>
+                <li>Templates (handlebars, Flask)</li>
+                <li>Sessão</li>
             </ul>
         </section>
-
     </main>
-    <footer>
+    <footer id="redesSociais">
+<!--
+Rodapé
+Inclua um rodapé que contenha links para outras páginas suas na internet. Inclua seus
+perfis nas redes sociais (Twitter, LinkedIn, GitHub, Stack Overflow, etc).
 
+Inclua também um texto de copyright, informando o ano da última alteração da página.
+
+Observações
+Os links deverão ficar dentro de uma lista.
+-->
+        <h2>Redes Sociais</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/Alexandre-CES" target="_blank">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="GitHub">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/flaviopneu235/" target="_blank">
+                    <img src="https://t.ctcdn.com.br/Ym9t_1dCfwc9uIknM54YCC4phg8=/i489927.jpeg" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <img src="#" alt="">
+                </a>
+                <a href="" target="_blank">
+                    <img src="#" alt="">
+                </a>
+            </li>
+        </ul>
+        <strong><em>
+            <small>&#169 2024</small>
+        </em></strong>
     </footer>
 </body>
 </html>
