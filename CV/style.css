@@ -11,9 +11,9 @@ body{
 }
 
 :root{
-    --color1:#543A91;
-    --color2:#4ba555;
-    --color3:#3d2000;
+    --color1:#2e8fff;
+    --color2:#ff006a;
+    --color3:#7800bd;
 
     --fontText: sans-serif;
     --fontTitle: serif;
@@ -26,17 +26,41 @@ a{
     text-decoration: none;
 }
 
+p{
+
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.459);
+}
+
+h1{
+    text-align: center;
+
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.404);
+}
+
+h2{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.699);
+    color: var(--color2);
+}
+
+h3{
+    margin: 10px 0px 5px;
+}
+
+h4{
+    margin: 5px 0px 3px;
+}
+
+ul{
+    list-style-type: none;
+}
+
 /* PARTES */
-    /* MENU */
+
+    /* menu */
     menu{
-        position: fixed;
-
-        top: 0;
-        left: 0;
-
         width: 100%;
         padding: 5px 5px;
-        background-color: var(--color2);
+        background-color: var(--color);
     }
 
     nav ul{
@@ -45,7 +69,6 @@ a{
         justify-content:space-between;
         flex-flow: wrap row;
 
-        list-style-type: none;
     }
 
     nav ul li{
@@ -61,45 +84,103 @@ a{
 
     nav ul li a{
         text-shadow: 1px 1px rgba(0, 0, 0, 0.452);
-        color: var(--color3);
+        color: var(--color2);
     }
 
+    /* header */
 
-header{
-    margin: 110px 0px 20px;
-    padding: 0px 20px;
-}
+    header{
+        margin: 20px 0px 50px;
+        padding: 0px 20px;
+    }
 
-main{
-    text-align: center;
-}
+    header img{
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid var(--color2);
+    }
+
+    header p{
+        font-size: 1.2em;
+    }
+
+    /* MAIN */
+
+    main{
+        padding: 0px 5px;
+        text-align: center;
+    }
+
+        /* sections */
+
+        section{
+            margin: 10px 0px 0px;
+            padding: 10px;
+
+            border-radius: 20px;
+
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
+        }
+
+        section:nth-child(odd){
+            background-image: linear-gradient(to bottom, var(--color1), var(--color3));
+        }
+        section:nth-child(even){
+            background-image: linear-gradient(to bottom, var(--color3), var(--color1));
+        }
+
+    /* footer */
+
+    footer{
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    footer ul{
+        columns: 3;
+        list-style-type: none;
+    }
+
+    footer img{
+        max-width: 80px;
+        border-radius: 50%;
+    }
+
+/* ID */
 
 #experiencia > p{
     text-align: left;
 }
 
-footer{
+#certificacoes{
+
+    padding-bottom: 20px;
+
+    border: 1px solid black;
+
+   background-image: linear-gradient(to bottom, var(--color1) 1px, var(--color3)98%, var(--color1) 100%);
+}
+
+#certificacoes h2{
+    margin: 10px;
+}
+
+#certificacoes  div{
+    border-top: 1px solid black;
+}
+
+#certificacoes  div img{
     text-align: center;
+    max-width: 100%;
+
+    border: 1px solid black;
 }
 
-footer ul{
-    columns: 2;
-    list-style-type: none;
+#certificacoes p{
+    text-align: left;
 }
-
-footer img{
-    max-width: 80px;
-    border-radius: 50%;
-}
-
-
-
-
 
 
 
 /* OBSERVAR CAIXAS */
 
-section, div{
-    border: 1px solid black;
-}
