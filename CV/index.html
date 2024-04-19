@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaQuery.css" media="screen and (min-width:600px)">
+    <link rel="stylesheet" href="./midScreen.css" media="screen and (min-width:600px)">
+    <link rel="stylesheet" href="./bigScreen.css" media="screen and (min-width:800px)">
     <title>Document</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
                 <li><a href="#apresentacao">Apresentação</a></li>
                 <li><a href="#educacao">Educação</a></li>
                 <li><a href="#certificacoes">Certificações</a></li>
-                <li><a href="#experiencias">Experiência</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#redesSociais">Redes Sociais</a></li>
             </ul>
@@ -35,22 +36,24 @@ O nome deverá ser formatado como título da página.
 Cada item deverá ser declarado dentro de seu próprio container.
 -->
     <h1>Alexandre Cabral do Espírito Santo</h1>
-    <section>
+    <div>
+        <section id="leftheadersection">
         
-        <div><img src="./imagens/fotopessoal.jpeg" alt="Foto pessoal"></div>
-        <p>
-            email: <strong><small>alexandreces666@gmail.com</small></strong>
-        </p>
-        <p>
-            cidade: <strong>Bom Despacho - MG</strong>
-        </p>
-    </section>
-    <section>
-        <h2>Sobre mim</h2>
-        <p>
-            Sou um estudante de programação em busca de me especializar na área e conseguir uma ótima vida profissional. No momento, estou melhorando minhas habilidades front e back-end na criação de sites.
-        </p>
-    </section>
+            <div><img src="./imagens/fotopessoal.jpeg" alt="Foto pessoal"></div>
+            <p>
+                email: <strong><small>alexandreces666@gmail.com</small></strong>
+            </p>
+            <p>
+                cidade: <strong>Bom Despacho - MG</strong>
+            </p>
+        </section>
+        <section id="rightheadersection">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou um estudante de programação em busca de me especializar na área e conseguir uma ótima vida profissional. No momento, estou melhorando minhas habilidades front e back-end na criação de sites.
+            </p>
+        </section>
+    </div>
     </header>
     <main>
         <div>
@@ -90,7 +93,7 @@ O nome da instituição deverá estar em um subtítulo.
             O nome do cargo deverá ficar dentro de um elemento de título.
             -->
                         <h2>Experiência</h2>
-                        <h3>Nenhuma</h3>    
+                        <h3>Nenhuma &#128549</h3>    
                         <p>
                             <strong>Título do Cargo: </strong>Desempregado
                         </p>
@@ -125,27 +128,27 @@ O elemento contendo o nome do curso deverá possuir um destaque em relação aos
 -->
 
             <h2>Certificações</h2>
-            
             <div>
-                <h3>New Way Informática</h3>
-                <img id="fundacaoestudarcertificado" src="./imagens/certificadonewway.jpeg" alt="Certificado da New Way">
-                <p>
-                    <strong>Carga horária: </strong> ... horas
-                </p>
-                <p>
-                    <strong>Ano(s) de realização: </strong> 2022-2023
-                </p>
-            </div>
-
-            <div>
-                <h3>CS50-Fundação Estudar</h3>
-                <img src="./imagens/certficadofundacao.jpeg" alt="Certificado da Fundação Estudar">
-                <p>
-                    <strong>Carga horária: </strong> ... horas
-                </p>
-                <p>
-                    <strong>Anos de realização: </strong> 2023-2024
-                </p>    
+                <div>
+                    <h3>New Way Informática</h3>
+                    <img id="fundacaoestudarcertificado" src="./imagens/certificadonewway.jpeg" alt="Certificado da New Way">
+                    <p>
+                        <strong>Carga horária: </strong> 166 horas
+                    </p>
+                    <p>
+                        <strong>Ano(s) de realização: </strong> 2022-2023
+                    </p>
+                </div>
+                <div>
+                    <h3>CS50-Fundação Estudar</h3>
+                    <img src="./imagens/certficadofundacao.jpeg" alt="Certificado da Fundação Estudar">
+                    <p>
+                        <strong>Carga horária: </strong> 70 horas
+                    </p>
+                    <p>
+                        <strong>Anos de realização: </strong> 2023-2024
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -185,8 +188,8 @@ As habilidades deverão ser incluídas em uma lista não ordenada
             <ul>
                 <li>NodeJs</li>
                 <li>Python</li>
-                <li>Database(SQL, SQLite, MongoDB)</li>
-                <li>Templates (handlebars, Flask)</li>
+                <li>Database <small>(SQL, SQLite, MongoDB)</small></li>
+                <li>Templates <small>(handlebars, Flask)</small></li>
                 <li>Sessão</li>
             </ul>
         </section>

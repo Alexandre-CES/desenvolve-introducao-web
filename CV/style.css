@@ -8,6 +8,8 @@
 
 body{
     max-width: 1500px;
+
+    background-image: linear-gradient(to bottom, white 98%, var(--color1));
 }
 
 :root{
@@ -38,12 +40,16 @@ h1{
 }
 
 h2{
+    font: bold 1.8em var(--fontTitle);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.699);
     color: var(--color2);
 }
 
 h3{
     margin: 10px 0px 5px;
+    padding: 10px 0px 10px;
+
+    font: bold 1.3em var(--fontTitle);
 }
 
 h4{
@@ -66,7 +72,7 @@ ul{
     nav ul{
         display: flex;
 
-        justify-content:space-between;
+        justify-content:space-evenly;
         flex-flow: wrap row;
 
     }
@@ -90,8 +96,10 @@ ul{
     /* header */
 
     header{
-        margin: 20px 0px 50px;
-        padding: 0px 20px;
+        margin: 0px 0px 30px;
+        padding: 20px 20px;
+
+        border-bottom: 1px solid black;
     }
 
     header img{
@@ -101,7 +109,8 @@ ul{
     }
 
     header p{
-        font-size: 1.2em;
+        font-size: 1.3em;
+        padding: 5px;
     }
 
     /* MAIN */
@@ -118,8 +127,10 @@ ul{
             padding: 10px;
 
             border-radius: 20px;
+            border: 1px solid black;
 
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.438);
         }
 
         section:nth-child(odd){
@@ -132,8 +143,12 @@ ul{
     /* footer */
 
     footer{
-        margin: 20px 0px;
+        margin: 30px 0px 0px;
         text-align: center;
+    }
+
+    footer h2{
+        margin: 10px;
     }
 
     footer ul{
@@ -142,27 +157,48 @@ ul{
     }
 
     footer img{
+        position: relative;
+
         max-width: 80px;
         border-radius: 50%;
+
+    }
+
+    footer img:hover{
+        transform: translate(3px, -3px);
+        box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.596);
     }
 
 /* ID */
 
 #experiencia > p{
     text-align: left;
+    padding: 2px;
+}
+
+#educacao{
+    padding: 20px;
 }
 
 #certificacoes{
 
+    margin: 10px 0px 30px;
     padding-bottom: 20px;
 
     border: 1px solid black;
 
-   background-image: linear-gradient(to bottom, var(--color1) 1px, var(--color3)98%, var(--color1) 100%);
+    background-image: linear-gradient(to bottom, var(--color1) 1px, var(--color3)95%, var(--color1) 100%);
 }
 
 #certificacoes h2{
     margin: 10px;
+}
+
+#certificacoes p{
+    margin: 10px 0px;
+    padding: 5px 0px;
+
+    font: normal 1.3em var(--fontText);
 }
 
 #certificacoes  div{

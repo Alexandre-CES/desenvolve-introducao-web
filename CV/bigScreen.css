@@ -1,0 +1,29 @@
+nav ul li{
+
+    font: bold 1.8em var(--fontMenu);
+
+}
+
+header > div{
+    display: flex;
+    justify-content: space-evenly;
+
+    font:normal 1.5em var(--fontText);
+}
+
+header > div section{
+    margin: 10px;
+}
+
+#leftheadersection:nth-child(odd){
+    background-image: linear-gradient(to right, var(--color3), var(--color1));
+}
+
+#rightheadersection{
+    background-image: linear-gradient(to left, var(--color3), var(--color1));
+}
+
+main > div section{
+    flex-basis: 40%;
+    margin: 5px;
+}

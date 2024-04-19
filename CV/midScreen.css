@@ -1,0 +1,68 @@
+
+nav ul li{
+    flex-basis: 30%;
+    margin: 10px 10px 0px;
+}
+
+
+header{
+    margin: 10px auto 50px;
+    max-width: 1200px;
+}
+
+header > div{
+    font:normal 1.3em var(--fontText);
+}
+
+header section{
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+main > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main > div section{
+    flex-basis: 50%;
+    margin: 5px;
+}
+
+#experiencia:nth-child(even){
+    background-image: linear-gradient(to right, var(--color3), var(--color1));
+}
+
+/* educação */
+
+#educacao{
+    order: 1;
+}
+
+#educacao:nth-child(odd){
+    background-image: linear-gradient(to left, var(--color3), var(--color1));
+}
+
+/* certificações */
+
+#certificacoes > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#certificacoes > div > div{
+    flex-basis: 50%;
+}
+
+#certificacoes > div > div:nth-child(1){
+    border-right: 1px solid black;
+}
+
+#certificacoes > div > div:nth-child(2){
+    padding: 0px 10px;
+}
+
+#certificacoes > div > div img{
+    max-width: 50%;
+}
+
